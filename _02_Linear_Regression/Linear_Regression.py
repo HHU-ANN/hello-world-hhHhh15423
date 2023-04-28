@@ -17,6 +17,6 @@ def lasso(data):
     weight = np.matmul(np.linalg.inv(np.matmul(X.T,X)),np.matmul(X.T,y))
     return weight @ data
 def read_data(path='./data/exp02/'):
-    X = np.load(path + 'X_train.npy')
+    x = np.load(path + 'X_train.npy')
     y = np.load(path + 'y_train.npy')
-    return X, y
+    return x, y
